@@ -17,11 +17,11 @@ brew install argocd # Mac user only otherwise visit https://github.com/argoproj/
 argocd login localhost:8080 # Give credential same using the UI
 argocd repo add https://github.com/dfollereau/argocd.git # Connect a repo
 argocd repo list
-kubectl apply -f argocd/projects/project-dev.yml
+kubectl apply -f argo/projects/project-dev.yml
 argocd proj list
 kubectl create ns strimzi
 kubectl create ns kafka
-kubectl apply -f argocd/root-app-dev.yaml
+kubectl apply -f argo/root-app-dev.yaml
 argocd app sync root-appbundle-app-dev
 argocd app list
 argocd app sync helm-strimzi-setup-dev

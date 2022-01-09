@@ -12,5 +12,5 @@ spec:
   project: strimzi-project-dev
   source:
     path: strimzi/install
-    repoURL: https://rndwww.nce.amadeus.net/git/scm/~dfollereau/argocd-strimzi
+    repoURL: https://github.com/dfollereau/argocd
     targetRevision: master

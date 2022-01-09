@@ -11,6 +11,6 @@ spec:
     name: in-cluster
   project: strimzi-project-dev
   source:
-    path: argocd/apps-children/dev
-    repoURL: https://rndwww.nce.amadeus.net/git/scm/~dfollereau/argocd-strimzi
+    path: argo/apps-children/dev
+    repoURL: https://github.com/dfollereau/argocd
     targetRevision: master
