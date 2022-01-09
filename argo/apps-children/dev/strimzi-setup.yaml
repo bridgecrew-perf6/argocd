@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: helm-strimzi-setup-dev
+  namespace: argocd
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: strimzi
+    name: in-cluster
+  project: strimzi-project-dev
+  source:
+    path: strimzi/install
+    repoURL: https://rndwww.nce.amadeus.net/git/scm/~dfollereau/argocd-strimzi
+    targetRevision: master
