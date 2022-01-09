@@ -28,5 +28,14 @@ argocd app sync helm-strimzi-setup-dev
 argocd app sync helm-strimzi-deploy-dev
 argocd app sync helm-kafka-deploy-dev
 ```
+
+## Uninstall
+```bash
+helm list --all-namespaces
+helm delete -n argocd local-argocd
+minikube stop
+minikube delete
+```
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
