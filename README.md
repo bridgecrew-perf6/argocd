@@ -6,7 +6,6 @@ ArgoCD, Kubernetes (Here with minikube), here used for Kafka and Strimzi
 ## Install
 ```bash
 minikube start # and more params to set more mem and cpu, k8s version
-kubectl create ns argocd
 helm repo add argo https://argoproj.github.io/argo-helm
 helm repo update
 kubectl create ns argocd
